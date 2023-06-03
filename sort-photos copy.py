@@ -19,7 +19,7 @@ for datei_name in os.listdir(ordner_pfad):
         datei_datum = datetime.fromtimestamp(os.path.getmtime(datei_pfad))
         
         # Erstelle den Unterordnerpfad mit dem Format "yyyy-mm-dd"
-        unterordner_name = datei_datum.strftime("%Y-%m-%d")
+        unterordner_name = datei_datum.strftime("%Y-%m")
         unterordner_pfad = os.path.join(ordner_pfad, unterordner_name)
         
         # Erstelle den Unterordner, falls er noch nicht existiert
